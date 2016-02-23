@@ -30,6 +30,9 @@ class ImageList extends ParserFunctionHelper {
 
 	public function render ( \Parser &$parser, $params ) {
 
+		global $wgOut;
+		$wgOut->addModules( 'ext.imagelist.base' );
+
 		$imageLines = explode( "\n", $params['images'] );
 
 		$maxHeight = $params['max height'];
@@ -109,8 +112,6 @@ class ImageList extends ParserFunctionHelper {
 
 		$thumbURI = $this->getExternalThumbURI( $sourceData, $id );
 		$hiresURI = $this->getExternalHiresURI( $sourceData, $id );
-
-		$this->extImageHeight = '';
 
 		return "<span class='plainlinks'>
 				[$hiresURI <img src='$thumbURI' class='thumbimage image-list' {$this->extImageHeight}/>]
