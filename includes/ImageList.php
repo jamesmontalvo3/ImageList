@@ -76,7 +76,7 @@ class ImageList extends ParserFunctionHelper {
 
 		$output .= '</ul>';
 
-		return $output;
+		return array( $output,  'noparse' => true, 'isHTML' => true ;
 
 	}
 
@@ -113,11 +113,14 @@ class ImageList extends ParserFunctionHelper {
 		$thumbURI = $this->getExternalThumbURI( $sourceData, $id );
 		$hiresURI = $this->getExternalHiresURI( $sourceData, $id );
 
+
+		// Does using this do anything:
+		// Xml::element( 'img', $attribs )
 		return "<span class='plainlinks'>
-				[$hiresURI <img src='$thumbURI' class='thumbimage image-list' {$this->extImageHeight}/>]
+				<a href='$hiresURI'><img src='$thumbURI' class='thumbimage image-list' {$this->extImageHeight}/></a>
 			</span>
 			<br />
-			[$hiresURI $img]";
+			<a href='$hiresURI'>$img</a>";
 
 	}
 
