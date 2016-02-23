@@ -76,7 +76,7 @@ class ImageList extends ParserFunctionHelper {
 
 		$output .= '</ul>';
 
-		return array( $output,  'noparse' => true, 'isHTML' => true ;
+		return array( $output, 'noparse' => true, 'isHTML' => true );
 
 	}
 
