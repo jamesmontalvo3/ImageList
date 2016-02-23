@@ -1,0 +1,30 @@
+{
+	"name": "mediawiki/image-list",
+	"type": "mediawiki-extension",
+	"description": "Provides the #imagelist parser function, allowing linking to external image repositories",
+	"keywords": [
+		"MediaWiki",
+		"Parser Function"
+	],
+	"homepage": "https://github.com/jamesmontalvo3/ImageList",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "James Montalvo",
+			"email": "jamesmontalvo3@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"irc": "irc://irc.freenode.net/mediawiki"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"mediawiki/parser-function-helper": "~0.1"
+	},
+	"autoload": {
+		"files" : [
+			"ImageList.php"
+		]
+	}
+}
