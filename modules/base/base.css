@@ -1,0 +1,26 @@
+.image-list-thumb-right {
+	clear: right;
+	float: right;
+	margin: .5em 0 1.3em 1.4em;
+	background-color: transparent;
+}
+
+.image-list-thumb-left {
+	clear: none;
+	float: left;
+	margin: .5em 1.4em 1.3em 1.4em;
+	background-color: transparent;
+}
+
+.image-list-thumb table {
+	border: solid #ccc 1px;
+	padding: 1px !important;
+	background-color: #f9f9f9;
+	font-size: 11px;
+	line-height: 150%;
+	text-align: center;
+	overflow: hidden;
+	width: 166px;
+	height: 200px;
+}
+

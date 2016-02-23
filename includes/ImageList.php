@@ -56,7 +56,7 @@ class ImageList extends ParserFunctionHelper {
 			}
 
 			$output .= '<li class="gallerybox" style="background-color:transparent;border-color:transparent;">'
-				. '<div class="io-thumb io-thumb-left">'
+				. '<div class="image-list-thumb image-list-thumb-left">'
 					. '<table style="background-color:#f9f9f9;">'
 						. '<tr><td style="text-align:center;">';
 
@@ -113,7 +113,7 @@ class ImageList extends ParserFunctionHelper {
 		$this->extImageHeight = '';
 
 		return "<span class='plainlinks'>
-				[$hiresURI <img src='$thumbURI' class='thumbimage' {$this->extImageHeight}/>]
+				[$hiresURI <img src='$thumbURI' class='thumbimage image-list' {$this->extImageHeight}/>]
 			</span>
 			<br />
 			[$hiresURI $img]";

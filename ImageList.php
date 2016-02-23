@@ -43,21 +43,17 @@ $GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'ImageList\Setup::setupParserFunc
 $GLOBALS['wgImageListPrefixes'] = array();
 
 
-// $ExtensionMeetingMinutesResourceTemplate = array(
-// 	'localBasePath' => __DIR__ . '/modules',
-// 	'remoteExtPath' => 'MeetingMinutes/modules',
-// );
+$ExtensionImageListResourceTemplate = array(
+);
 
-// $GLOBALS['wgResourceModules'] += array(
+$GLOBALS['wgResourceModules'] += array(
 
-// 	'ext.meetingminutes.form' => $ExtensionMeetingMinutesResourceTemplate + array(
-// 		'styles' => 'form/meeting-minutes.css',
-// 		'scripts' => array( 'form/SF_MultipleInstanceRefire.js', 'form/meeting-minutes.js' ),
-// 		// 'dependencies' => array( 'mediawiki.Uri' ),
-// 	),
+	'ext.imagelist.base' => array(
+		'localBasePath' => __DIR__ . '/modules',
+		'remoteExtPath' => 'ImageList/modules',
+		'scripts' => 'base/base.js',
+		'styles' => 'base/base.css',
+		'position' => 'top',
+	),
 
-// 	'ext.meetingminutes.template' => $ExtensionMeetingMinutesResourceTemplate + array(
-// 		'styles' => 'template/template.css',
-// 	),
-
-// );
+);

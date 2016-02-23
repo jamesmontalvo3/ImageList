@@ -1,4 +1,4 @@
-Misc Parser Functions
-=====================
+Image List
+==========
 
-Miscellaneous parser functions mostly used by NASA JSC.
+A method for generating image galleries from external image sources, and mixing them with local wiki images.
